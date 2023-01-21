@@ -90,8 +90,7 @@
                     <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Contact</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Connexion</a></li>
-                        <li><a href="#" class="text-white">Déconnexion</a></li>
+                        <li><a href="admin/index.php" class="text-white">Connexion</a></li>
                     </ul>
                     </div>
                 </div>
