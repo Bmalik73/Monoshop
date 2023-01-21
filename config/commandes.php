@@ -26,7 +26,16 @@
 
             $req->closeCursor();
         }
+    }
 
+    function supprimer($id)
+    {
+        if (require("connexion.php")) 
+        {
+            $req=$access->prepare("DELETE * FROM produits WHERE id=?");
+
+            $req->execute(array($id));
+        }
     }
 
 ?>
