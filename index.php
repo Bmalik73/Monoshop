@@ -84,15 +84,14 @@
                 <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    <h4 class="text-white">A propos</h4>
+                    <p class="text-muted">A</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Contact</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
+                        <li><a href="#" class="text-white">Connexion</a></li>
+                        <li><a href="#" class="text-white">Déconnexion</a></li>
                     </ul>
                     </div>
                 </div>
@@ -121,18 +120,16 @@
                 <?php foreach($Produits as $produit): ?>
                     <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" 
-                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title><?= $produit->nom ?></title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <img src="<?= $produit->image ?>"></svg>
+                        <title><?= $produit->nom ?></title>
+                        <img src="<?= $produit->image ?>">
 
                         <div class="card-body">
-                        <p class="card-text"><?= $produit->description ?></p>
+                        <p class="card-text"><?= substr($produit->description, 0, 200);  ?></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
                             </div>
-                            <small class="text-muted"><?= $produit->prix ?></small>
+                            <small class="text-muted"><?= $produit->prix ?> €</small>
                         </div>
                         </div>
                     </div>
