@@ -14,7 +14,7 @@
 
     function afficher()
     {
-        if (require(connexion.php)) 
+        if (require("connexion.php")) 
         {
             $req=$access->prepare("SELECT * FROM produits ORDER BY id DESC");
 
